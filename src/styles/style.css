@@ -1,0 +1,88 @@
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.perfil_card{
+    background-color: white;
+    border-radius: 15px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    width: 450px;
+    height: 470px;
+    flex-shrink: 200px;
+}
+
+.perfil_card img{
+    margin-top: 40px;
+    align-self: center;
+    width: 30%;
+}
+
+.perfil_card .nome_perfil{
+    margin-top: 38px;
+    font-weight: 700;
+}
+
+.perfil_card .age{
+    color: rgba(0, 0, 0, 0.54);
+}
+
+.perfil_card .pais{
+    margin: 38px 0px 45px 0px;
+}
+
+.perfil_card footer{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 29px 0px 49px 0px;
+}
+
+.perfil_card .pais,
+.perfil_card footer p{
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.54);
+}
+
+.perfil_card .line{
+    height: 0px;
+    width: 100%;
+    border: 1.3px solid rgba(72, 71, 71, 0.19);
+}
+
+.perfil_card footer .bold{
+    font-weight: 700;
+    color: #000000;
+}
+
+@media (max-width:450px){
+
+    *{
+        font-size: 19px;
+        line-height: 23px;
+    }
+
+    .perfil_card{
+        height: 370px;
+        width: 350px;
+        margin: 0px 15px 0px 15px;
+    }
+
+    .perfil_card footer {  
+        padding: 18px 0px 25px 0px;
+    }
+
+    .perfil_card .pais{
+        margin: 28px 0px 30px 0px;
+    }
+    
+    .perfil_card .nome_perfil{
+        margin-top: 28px;
+    }
+
+}
+
+
